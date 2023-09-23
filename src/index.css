@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav{
+  display: flex;
+  padding: 20px 36px;
+  height:70px;
+  box-shadow: 0px 3px 7.5px rgba(0,0,0,0.1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+nav img{
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+}
+
+.banner img{
+  margin-bottom: 20px;
+  max-width: 600px;
+  align-self: center;
+}
+.banner h1{
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.banner p{
+  font-size: 25px;
+  color: rgb(134, 134, 134);
+  font-weight: lighter;
+}
+
+.experiences{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 20px 50px;
+  align-items: center;
+  overflow-x: auto;
+}
+.card{
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+}
+.card img{
+  object-fit: cover;
+  width: 250px;
+  height: 320px;
+  border-radius: 12px;
+}
+.cardDetails{
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-weight: normal;
+}
+
+#cardDescription{
+  color:rgb(122, 122, 122);
+}
+#pricing span{
+  font-weight: bold;
+}
+
+#tag{
+  background-color: white;
+  color: rgb(109, 109, 109);
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(219, 219, 219);
+  position: absolute;
+  top: 1;
+  left: 1;
+  margin: 5px;
 }
